@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="wrapper">
+
+    <img src="Assets/pic1.png" alt="Paris" class="center">
+    <div class="instructions">
+        <p> Move your <b>right hand</b> in front of your webcam to move the cursor.
+            <br>Pinch your thumb and index finger to pick up a photo.
+        </p>
+        <label><input type="checkbox" id="hand_choice"> <span>Click here to use <b>left hand</b></span></label>
+    </div>
+    
+    <div class="debug_window">
+      <video class="input_video"></video>
+      <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+    </div>
+    
+    <div class="movable photo photo_a">
+      <div class="photo_frame">
+        <img src="Assets/pic2.png" alt="garden pond" />
+      </div>
+    </div>
+    <div class="movable photo photo_b">
+        <div class="photo_frame">
+          <img src="Assets/pic3.png" alt="sunset view" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_c">
+        <div class="photo_frame">
+          <img src="Assets/pic4.png" alt="forest path" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_d">
+        <div class="photo_frame">
+          <img src="Assets/pic5.png" alt="mountain peak" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_e">
+        <div class="photo_frame">
+          <img src="Assets/pic6.png" alt="beach waves" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_f">
+        <div class="photo_frame">
+          <img src="Assets/pic7.png" alt="city skyline" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_g">
+        <div class="photo_frame">
+          <img src="Assets/pic8.png" alt="flower field" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_h">
+        <div class="photo_frame">
+          <img src="Assets/pic9.png" alt="desert dunes" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_i">
+        <div class="photo_frame">
+          <img src="Assets/pic10.png" alt="snowy forest" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_j">
+        <div class="photo_frame">
+          <img src="Assets/pic11.png" alt="river valley" />
+        </div>
+      </div>
+      
+      <div class="movable photo photo_k">
+        <div class="photo_frame">
+          <img src="Assets/pic12.png" alt="countryside barn" />
+        </div>
+      </div>
+      
+    
+    <div class="cursor wand"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
